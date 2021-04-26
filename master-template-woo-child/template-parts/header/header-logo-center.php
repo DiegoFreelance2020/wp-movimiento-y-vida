@@ -49,7 +49,7 @@ global $geniorama
 	</div>
 </div>
 
-<div class="bottom-subheader container">
+<div class="bottom-subheader container py-2">
     <?php get_template_part('template-parts/menus/menu-principal'); ?>
 </div>
 
