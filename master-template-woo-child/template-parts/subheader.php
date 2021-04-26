@@ -18,8 +18,11 @@ global $geniorama;
     if(is_product_category()){
         $term = get_queried_object();
         $bg_image = get_field('background', $term);
-        $bg_image_url = $bg_image['url'];
-
+        if($bg_image){
+            $bg_image_url = $bg_image['url'];
+        } else {
+            $bg_image_url = add_banner_subheader();
+        }
     } else {
         $bg_image_url = add_banner_subheader();
     }
@@ -57,14 +60,15 @@ global $geniorama;
                         $yt_embed = $yt_pre . $yt_video[1];
                 ?>
 
-                <button class="cont-button-play mt-4" data-toggle="modal" data-target="#modalVideoCat" data-video="<?php echo $yt_embed; ?>">
-                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="40" cy="40" r="40" fill="#F68B3D"/>
-                        <path d="M39.5 18.4167C27.3232 18.4167 17.4166 28.3233 17.4166 40.5C17.4166 52.6768 27.3232 62.5833 39.5 62.5833C51.6767 62.5833 61.5833 52.6768 61.5833 40.5C61.5833 28.3233 51.6767 18.4167 39.5 18.4167ZM39.5 58.1667C29.759 58.1667 21.8333 50.241 21.8333 40.5C21.8333 30.759 29.759 22.8333 39.5 22.8333C49.2409 22.8333 57.1666 30.759 57.1666 40.5C57.1666 50.241 49.2409 58.1667 39.5 58.1667Z" fill="white"/>
-                        <path d="M32.875 51.5417L50.5417 40.5L32.875 29.4583V51.5417Z" fill="white"/>
-                    </svg>
-                </button>
-
+                    <?php if($video): ?>
+                    <button class="cont-button-play mt-4" data-toggle="modal" data-target="#modalVideoCat" data-video="<?php echo $yt_embed; ?>">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="40" fill="#F68B3D"/>
+                            <path d="M39.5 18.4167C27.3232 18.4167 17.4166 28.3233 17.4166 40.5C17.4166 52.6768 27.3232 62.5833 39.5 62.5833C51.6767 62.5833 61.5833 52.6768 61.5833 40.5C61.5833 28.3233 51.6767 18.4167 39.5 18.4167ZM39.5 58.1667C29.759 58.1667 21.8333 50.241 21.8333 40.5C21.8333 30.759 29.759 22.8333 39.5 22.8333C49.2409 22.8333 57.1666 30.759 57.1666 40.5C57.1666 50.241 49.2409 58.1667 39.5 58.1667Z" fill="white"/>
+                            <path d="M32.875 51.5417L50.5417 40.5L32.875 29.4583V51.5417Z" fill="white"/>
+                        </svg>
+                    </button>
+                    <?php endif; ?>
                 <?php endif; ?>
             </div>
         </div>
