@@ -12,3 +12,13 @@ function enqueue_styles_child_theme() {
 }
 
 add_action( 'wp_enqueue_scripts', 'enqueue_styles_child_theme' );
+
+add_filter( 'get_the_archive_title', function ( $title ) {
+
+    if( is_product_category() || is_category()) {
+        $title = single_cat_title( '', false );
+    }
+
+    return $title;
+
+});

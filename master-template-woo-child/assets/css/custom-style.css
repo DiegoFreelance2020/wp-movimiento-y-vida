@@ -1,6 +1,72 @@
-.form-master {
-  background-color: transparent !important;
-  color: white !important;
+.box-menu-lateral {
+  right: unset;
+  left: -200%;
+  z-index: 5;
+}
+.box-menu-lateral.show-menu {
+  left: 0;
+}
+
+.sticky-header {
+  z-index: 3 !important;
+}
+.sticky-header .box-logo .img-brand {
+  max-height: 85px !important;
+}
+
+.bottom-subheader .nav .nav-link {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #282848;
+  font-size: 10pt;
+  letter-spacing: 0px;
+}
+.bottom-subheader .nav .nav-link:hover {
+  color: #F68B3D;
+}
+.bottom-subheader .nav .current-menu-item .nav-link {
+  color: #F68B3D;
+}
+
+.sub-heading-section h1 {
+  text-transform: uppercase;
+}
+.sub-heading-section h1 span {
+  color: white;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 500 !important;
+  letter-spacing: 0px;
+}
+.sub-heading-section .cont-button-play {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.modal-video-cat .modal-content {
+  background-color: transparent;
+  border: none;
+}
+.modal-video-cat iframe {
+  width: 100% !important;
+  height: 650px;
+}
+
+.tax-product_cat aside#secondary {
+  display: none;
+}
+
+@media (max-width: 995px) {
+  .modal-video-cat iframe {
+    height: 300px !important;
+  }
+}
+.sub-heading-product {
+  background-color: #EEEEEE;
+}
+.sub-heading-product .breadcrumbs a span {
+  color: #F68B3D;
 }
 
 /*# sourceMappingURL=custom-style.css.map */
