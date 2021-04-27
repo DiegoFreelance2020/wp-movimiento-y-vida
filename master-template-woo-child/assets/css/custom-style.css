@@ -1,7 +1,7 @@
 .box-menu-lateral {
   right: unset;
   left: -200%;
-  z-index: 5;
+  z-index: 3 !important;
 }
 .box-menu-lateral.show-menu {
   left: 0;
@@ -50,7 +50,7 @@
 }
 .modal-video-cat iframe {
   width: 100% !important;
-  height: 650px;
+  height: 450px;
 }
 
 .tax-product_cat aside#secondary {
@@ -60,6 +60,11 @@
 @media (max-width: 995px) {
   .modal-video-cat iframe {
     height: 300px !important;
+  }
+}
+@media (max-width: 576px) {
+  .modal-video-cat iframe {
+    height: 200px !important;
   }
 }
 .sub-heading-product {
@@ -180,6 +185,38 @@
   }
   100% {
     transform: translateX(0px);
+  }
+}
+.box-buttons-wc .item-search {
+  margin: 0.4em;
+}
+.box-buttons-wc .dgwt-wcas-search-form svg {
+  fill: #fff;
+}
+.box-buttons-wc .dgwt-wcas-search-form svg path {
+  fill: #fff;
+}
+.box-buttons-wc .dgwt-wcas-search-form .dgwt-wcas-search-input {
+  background: transparent !important;
+  color: white;
+}
+.box-buttons-wc .dgwt-wcas-search-form .dgwt-wcas-search-input::placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal !important;
+}
+.box-buttons-wc .dgwt-wcas-search-form .dgwt-wcas-search-input:focus {
+  border-color: #F68B3D;
+}
+
+@media (max-width: 576px) {
+  .box-buttons-wc {
+    background: #F68B3D;
+  }
+  .box-buttons-wc .item-search .dgwt-wcas-search-input::placeholder {
+    color: white !important;
+  }
+  .box-buttons-wc .nav-link {
+    color: white;
   }
 }
 

@@ -1,0 +1,26 @@
+.box-buttons-wc
+    .item-search
+        margin: 0.4em
+    .dgwt-wcas-search-form
+        svg
+            fill: #fff
+            path
+                fill: #fff
+        .dgwt-wcas-search-input
+            background: transparent !important
+            color: white
+            &::placeholder
+                font-family: 'Quicksand', sans-serif
+                font-style: normal !important
+            &:focus
+                border-color: #F68B3D
+
+@media ( max-width: 576px )
+    .box-buttons-wc
+        background: #F68B3D
+        .item-search
+            .dgwt-wcas-search-input
+                &::placeholder
+                    color: white !important
+        .nav-link
+            color: white

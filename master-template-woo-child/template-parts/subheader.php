@@ -76,7 +76,7 @@ global $geniorama;
 
 <!-- Modal -->
 <div class="modal fade modal-video-cat" id="modalVideoCat" tabindex="-1" aria-labelledby="modalVideoCat" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
      <div class="modal-content">
         <iframe src="<?php echo $yt_embed; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
      </div>

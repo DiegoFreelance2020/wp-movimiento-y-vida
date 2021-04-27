@@ -10,6 +10,16 @@
 global $geniorama
 ?>
 
+
+<!-- Mobile header -->
+<div class="box-buttons d-md-none">
+	<?php 
+		if($geniorama['wc-show-menu-buttons']){
+			get_template_part('template-parts/buttons/buttons-menu-wc');
+		}
+	?>
+</div>
+
 <!--Static Header -->
 <div class="bottom-header static-header type-logo-center">
     <div class="<?php select_width($geniorama['button-set-multi-header-bottom']); ?>">
