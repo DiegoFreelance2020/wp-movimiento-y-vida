@@ -22,3 +22,6 @@ add_filter( 'get_the_archive_title', function ( $title ) {
     return $title;
 
 });
+
+require "inc/helpers.php";
+require "inc/shortcodes/sc-post-wp.php";
