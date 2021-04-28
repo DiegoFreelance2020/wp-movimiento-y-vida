@@ -25,7 +25,7 @@ if(!function_exists('cats_slider_func')){
                 }
             ?>
                 
-                <a href="<?php echo get_term_link($term->name, "product_cat"); ?>" class="item-cat">
+                <a href="<?php  echo get_term_link($term->term_id, "product_cat"); ?>" class="item-cat">
                     <figure>
                         <?php echo $image; ?>
                         <figcaption>
