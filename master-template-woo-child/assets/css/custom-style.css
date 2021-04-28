@@ -64,6 +64,11 @@ body, html {
   outline: none;
 }
 
+@media (max-width: 576px) {
+  .sub-heading-section h1 {
+    font-size: 1.7em;
+  }
+}
 .modal-video-cat .modal-content {
   background-color: transparent;
   border: none;
@@ -155,6 +160,27 @@ body, html {
 @media (max-width: 576px) {
   .modal-video-cat iframe {
     height: 200px !important;
+  }
+
+  .sidebar-woocommerce {
+    overflow-x: scroll;
+  }
+
+  .products {
+    padding: 1em !important;
+  }
+  .products .product {
+    width: 100% !important;
+  }
+
+  .woocommerce-result-count {
+    width: 100%;
+    text-align: center;
+  }
+
+  .woocommerce-ordering {
+    width: 100%;
+    text-align: center;
   }
 }
 .sub-heading-product {
