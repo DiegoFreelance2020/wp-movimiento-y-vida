@@ -29,21 +29,14 @@ get_header( 'shop' );
 do_action( 'woocommerce_before_main_content' );
 
 ?>
-<header class="woocommerce-products-header">
-	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-	<?php endif; ?>
 
-	<?php
-	/**
-	 * Hook: woocommerce_archive_description.
-	 *
-	 * @hooked woocommerce_taxonomy_archive_description - 10
-	 * @hooked woocommerce_product_archive_description - 10
-	 */
-	do_action( 'woocommerce_archive_description' );
-	?>
-</header>
+<div class="sidebar-woocommerce">
+	<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Master Sidebar Woocommerce')): endif; ?>
+</div>
+
+<div class="title-section-heading">
+	<h2>TODAS LAS ACTIVIDADES</h2>
+</div>
 
 <?php
 if ( woocommerce_product_loop() ) {
@@ -80,6 +73,23 @@ if ( woocommerce_product_loop() ) {
 	 * @hooked woocommerce_pagination - 10
 	 */
 	do_action( 'woocommerce_after_shop_loop' );
+
+	?>
+
+	<section class="other-cats mt-4 mb-5">
+		<div class="title-section-heading">
+			<h2>OTRAS CATEGORÍAS</h2>
+		</div>
+
+		<?php 
+		$category = get_queried_object();
+		
+		echo do_shortcode("[cats_slider id_excl=".$category->term_id."]"); 
+		
+		?>
+	</section>
+
+	<?php
 } else {
 	/**
 	 * Hook: woocommerce_no_products_found.
@@ -101,6 +111,6 @@ do_action( 'woocommerce_after_main_content' );
  *
  * @hooked woocommerce_get_sidebar - 10
  */
-do_action( 'woocommerce_sidebar' );
+//do_action( 'woocommerce_sidebar' );
 
 get_footer( 'shop' );

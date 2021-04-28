@@ -1,0 +1,47 @@
+.slick-cats
+    button
+        &::before
+            color: $p-color !important
+    .item-cat
+        padding: 1em
+        figure
+            border-radius: 21px
+            overflow: hidden
+            position: relative
+            img
+                width: 100%
+                height: 400px
+                object-fit: cover
+            figcaption
+                background-color: $text-dark
+                color: white
+                text-align: center
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                height: 80px
+                padding: 1em 2em
+                transition: all .3s
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                .cont-arrow
+                    opacity: 0
+                    position: absolute
+                    bottom: -30px
+                    transition: all .3s ease-in-out
+                h4
+                    color: white
+                    font-size: 1em
+        &:hover
+            figure
+                figcaption
+                    height: 100%
+                    background-color: $p-color
+                    .cont-arrow
+                        opacity: 1
+                        position: relative
+                        bottom: 0
+                        animation: sliceArrow 1s infinite

@@ -1,3 +1,22 @@
+body, html {
+  overflow-x: hidden;
+}
+
+.title-section-heading {
+  background-color: #085FDA;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin: 1em 0;
+}
+.title-section-heading h2 {
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1em;
+  margin-bottom: 0;
+  letter-spacing: 5px;
+  font-size: 1.5em;
+}
+
 .box-menu-lateral {
   right: unset;
   left: -200%;
@@ -31,6 +50,7 @@
 
 .sub-heading-section h1 {
   text-transform: uppercase;
+  font-size: 3em;
 }
 .sub-heading-section h1 span {
   color: white;
@@ -44,6 +64,11 @@
   outline: none;
 }
 
+@media (max-width: 576px) {
+  .sub-heading-section h1 {
+    font-size: 1.7em;
+  }
+}
 .modal-video-cat .modal-content {
   background-color: transparent;
   border: none;
@@ -53,8 +78,78 @@
   height: 450px;
 }
 
-.tax-product_cat aside#secondary {
-  display: none;
+.sidebar-woocommerce {
+  display: flex;
+  margin-bottom: 2em;
+}
+.sidebar-woocommerce .widget {
+  margin-right: 2em;
+  min-width: 200px;
+  border: 1px solid #d7d7d7;
+  padding: 1em;
+  border-radius: 5px;
+}
+.sidebar-woocommerce .widget a {
+  color: #555555;
+}
+.sidebar-woocommerce .widget a:hover {
+  color: #F68B3D;
+}
+.sidebar-woocommerce .widget-title {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #282848;
+  position: relative;
+  margin-bottom: 2em;
+}
+.sidebar-woocommerce .widget-title::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #F68B3D;
+}
+.sidebar-woocommerce .widget .price_slider_amount {
+  font-family: "Quicksand", sans-serif;
+  text-align: left;
+}
+.sidebar-woocommerce .widget .price_slider_amount button {
+  display: block;
+  width: 100%;
+  border: 1px solid #085FDA;
+  background: transparent;
+  color: #085FDA;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  float: none;
+  font-size: 1em !important;
+  transition: all 0.3s;
+}
+.sidebar-woocommerce .widget .price_slider_amount button:hover {
+  background-color: #085FDA;
+  color: white;
+}
+.sidebar-woocommerce .widget .price_slider_amount span {
+  font-family: "Quicksand", sans-serif;
+}
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+  background-color: #F68B3D;
+}
+
+.woocommerce-result-count {
+  letter-spacing: 0px;
+}
+
+.woocommerce-ordering select {
+  height: 40px;
+  border-color: #d7d7d7;
+  padding: 0 10px;
+  font-family: "Quicksand", sans-serif;
+  color: #555555;
 }
 
 @media (max-width: 995px) {
@@ -65,6 +160,27 @@
 @media (max-width: 576px) {
   .modal-video-cat iframe {
     height: 200px !important;
+  }
+
+  .sidebar-woocommerce {
+    overflow-x: scroll;
+  }
+
+  .products {
+    padding: 1em !important;
+  }
+  .products .product {
+    width: 100% !important;
+  }
+
+  .woocommerce-result-count {
+    width: 100%;
+    text-align: center;
+  }
+
+  .woocommerce-ordering {
+    width: 100%;
+    text-align: center;
   }
 }
 .sub-heading-product {
@@ -148,6 +264,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1em 2em !important;
   letter-spacing: 0px !important;
   font-size: 1em !important;
   line-height: 1em !important;
@@ -267,6 +384,59 @@
 .cont-card-post .cont-card-desc-post .btn-card:hover {
   background-color: #F68B3D;
   color: white;
+}
+
+.slick-cats button::before {
+  color: #F68B3D !important;
+}
+.slick-cats .item-cat {
+  padding: 1em;
+}
+.slick-cats .item-cat figure {
+  border-radius: 21px;
+  overflow: hidden;
+  position: relative;
+}
+.slick-cats .item-cat figure img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.slick-cats .item-cat figure figcaption {
+  background-color: #282848;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 1em 2em;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slick-cats .item-cat figure figcaption .cont-arrow {
+  opacity: 0;
+  position: absolute;
+  bottom: -30px;
+  transition: all 0.3s ease-in-out;
+}
+.slick-cats .item-cat figure figcaption h4 {
+  color: white;
+  font-size: 1em;
+}
+.slick-cats .item-cat:hover figure figcaption {
+  height: 100%;
+  background-color: #F68B3D;
+}
+.slick-cats .item-cat:hover figure figcaption .cont-arrow {
+  opacity: 1;
+  position: relative;
+  bottom: 0;
+  animation: sliceArrow 1s infinite;
 }
 
 /*# sourceMappingURL=custom-style.css.map */
