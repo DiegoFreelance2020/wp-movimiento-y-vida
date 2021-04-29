@@ -51,6 +51,8 @@ body, html {
 .sub-heading-section h1 {
   text-transform: uppercase;
   font-size: 3em;
+  line-height: 1.1em;
+  margin-bottom: 1em;
 }
 .sub-heading-section h1 span {
   color: white;
@@ -216,6 +218,7 @@ body, html {
   padding: 0.5em 1em !important;
   color: white;
   font-family: "Quicksand", sans-serif;
+  line-height: 1.3em;
 }
 .products .type-product .add_to_cart_button {
   width: 90%;
@@ -427,6 +430,7 @@ body, html {
 .slick-cats .item-cat figure figcaption h4 {
   color: white;
   font-size: 1em;
+  line-height: 1.2em;
 }
 .slick-cats .item-cat:hover figure figcaption {
   height: 100%;
@@ -437,6 +441,44 @@ body, html {
   position: relative;
   bottom: 0;
   animation: sliceArrow 1s infinite;
+}
+
+.woocommerce-input-wrapper {
+  width: 100%;
+}
+.woocommerce-input-wrapper .input-text {
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  height: 40px;
+  padding: 0 10px;
+}
+
+#billing_country_field {
+  display: none;
+}
+
+.select2-selection {
+  height: 40px !important;
+  padding-top: 5px;
+}
+.select2-selection__arrow {
+  top: 5px !important;
+}
+
+.woocommerce-checkout .entry-header {
+  background: #085FDA;
+  color: white;
+  padding: 1em 2em;
+  text-align: center;
+  margin: 2em 0;
+}
+.woocommerce-checkout .entry-header .entry-title {
+  color: white;
+  line-height: 1em;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 5px;
 }
 
 /*# sourceMappingURL=custom-style.css.map */
