@@ -40,4 +40,6 @@ jQuery(function ($) {
             // instead of a settings object
         ]
     })
+
+    $('.woocommerce-cart-form__cart-item .product-remove a').html('<i class="far fa-trash-alt"></i>')
 });

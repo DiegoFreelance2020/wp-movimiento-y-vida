@@ -17,6 +17,13 @@ body, html {
   font-size: 1.5em;
 }
 
+.woocommerce-info {
+  font-family: "Quicksand", sans-serif;
+}
+.woocommerce-info a {
+  color: #085FDA;
+}
+
 .box-menu-lateral {
   right: unset;
   left: -200%;
@@ -249,6 +256,13 @@ body, html {
   line-height: 1em;
   padding: 5px;
 }
+.products .type-product .added_to_cart {
+  width: 100%;
+  margin-bottom: 1em;
+  font-family: "Roboto", sans-serif;
+  color: #085FDA;
+  text-align: center;
+}
 
 .products .product-category {
   position: relative;
@@ -446,10 +460,10 @@ body, html {
   animation: sliceArrow 1s infinite;
 }
 
-.woocommerce-input-wrapper {
+.woocommerce-input-wrapper, .checkout_coupon {
   width: 100%;
 }
-.woocommerce-input-wrapper .input-text {
+.woocommerce-input-wrapper .input-text, .checkout_coupon .input-text {
   border: 1px solid #d7d7d7;
   border-radius: 5px;
   height: 40px;
@@ -468,20 +482,74 @@ body, html {
   top: 5px !important;
 }
 
-.woocommerce-checkout .entry-header {
+.woocommerce-checkout .entry-header, .woocommerce-cart .entry-header {
   background: #085FDA;
   color: white;
   padding: 1em 2em;
   text-align: center;
   margin: 2em 0;
 }
-.woocommerce-checkout .entry-header .entry-title {
+.woocommerce-checkout .entry-header .entry-title, .woocommerce-cart .entry-header .entry-title {
   color: white;
   line-height: 1em;
   margin: 0;
   text-transform: uppercase;
   font-size: 1.5em;
   letter-spacing: 5px;
+}
+
+.woocommerce-checkout .place-order .button {
+  background-color: #F68B3D !important;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.woocommerce-checkout .place-order .button:hover {
+  background-color: #f47111 !important;
+}
+
+.checkout_coupon .button {
+  background-color: white !important;
+  border: 1px solid #F68B3D !important;
+  color: #F68B3D !important;
+  font-family: "Roboto", sans-serif;
+}
+.checkout_coupon .button:hover {
+  background-color: #F68B3D !important;
+  color: white !important;
+}
+
+.checkout-button {
+  background-color: #F68B3D !important;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.checkout-button:hover {
+  background-color: #f47111 !important;
+}
+
+.product-name a {
+  font-family: "Quicksand", sans-serif;
+  color: #085FDA;
+}
+
+.woocommerce-cart-form__cart-item .product-remove a {
+  color: #555555 !important;
+}
+.woocommerce-cart-form__cart-item .product-remove a:hover {
+  background-color: transparent !important;
+  color: red !important;
+}
+
+.coupon .input-text {
+  width: auto !important;
+  font-family: "Quicksand", sans-serif;
+}
+
+th {
+  font-family: "Roboto", sans-serif;
+  color: #282848;
 }
 
 /*# sourceMappingURL=custom-style.css.map */
