@@ -2,12 +2,16 @@
 
 if(!function_exists('show_post_wp_func')){
     function show_post_wp_func($atts){
-        $args = array(
-            'post_type' => 'post',
-            'posts_per_page' => '3'
+        $atts = shortcode_atts(
+            array(
+                'post_type' => 'post',
+                'posts_per_page' => '3'
+            ), 
+            $atts, 
+            'show_post_wp'
         );
 
-        $query = new WP_Query($args);
+        $query = new WP_Query($atts);
 
         if($query->have_posts()):
         ?>
