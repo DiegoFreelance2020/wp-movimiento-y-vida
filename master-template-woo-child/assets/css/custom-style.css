@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body, html {
   overflow-x: hidden;
 }
@@ -22,6 +23,10 @@ body, html {
 }
 .woocommerce-info a {
   color: #085FDA;
+}
+
+.woocommerce-page .site-main {
+  padding-bottom: 4em;
 }
 
 .box-menu-lateral {
@@ -482,14 +487,14 @@ body, html {
   top: 5px !important;
 }
 
-.woocommerce-checkout .entry-header, .woocommerce-cart .entry-header {
+.woocommerce-checkout .entry-header, .woocommerce-cart .entry-header, .woocommerce-account .entry-header {
   background: #085FDA;
   color: white;
   padding: 1em 2em;
   text-align: center;
   margin: 2em 0;
 }
-.woocommerce-checkout .entry-header .entry-title, .woocommerce-cart .entry-header .entry-title {
+.woocommerce-checkout .entry-header .entry-title, .woocommerce-cart .entry-header .entry-title, .woocommerce-account .entry-header .entry-title {
   color: white;
   line-height: 1em;
   margin: 0;
@@ -550,6 +555,70 @@ body, html {
 th {
   font-family: "Roboto", sans-serif;
   color: #282848;
+}
+
+.woocommerce-MyAccount-navigation {
+  border: 1px solid #d7d7d7;
+  padding: 2em;
+}
+.woocommerce-MyAccount-navigation ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.woocommerce-MyAccount-navigation ul li a {
+  line-height: 40px;
+  color: #282848;
+  transition: all 0.3s;
+}
+.woocommerce-MyAccount-navigation ul li a::before {
+  content: "→ ";
+}
+.woocommerce-MyAccount-navigation ul li a:hover {
+  color: #F68B3D;
+  padding-left: 5px;
+}
+.woocommerce-MyAccount-navigation ul li.is-active a {
+  color: #F68B3D !important;
+  padding-left: 5px;
+}
+
+.woocommerce-MyAccount-content .input-text {
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  height: 40px;
+  padding: 0 10px;
+}
+.woocommerce-MyAccount-content fieldset {
+  margin-top: 2em;
+}
+.woocommerce-MyAccount-content fieldset legend {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #282848;
+  font-weight: bold;
+}
+.woocommerce-MyAccount-content .woocommerce-Button {
+  background-color: #F68B3D !important;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white !important;
+}
+.woocommerce-MyAccount-content .woocommerce-Button:hover {
+  background-color: #f47111 !important;
+}
+.woocommerce-MyAccount-content .woocommerce-form-row--wide {
+  flex-direction: column;
+}
+
+@media (max-width: 576px) {
+  .woocommerce-MyAccount-navigation {
+    margin-bottom: 2em;
+  }
+
+  .woocommerce-MyAccount-content .woocommerce-form-row {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=custom-style.css.map */
