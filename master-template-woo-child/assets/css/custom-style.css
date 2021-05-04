@@ -204,6 +204,70 @@ body, html {
   color: #F68B3D;
 }
 
+.single-product .product_title {
+  color: #F68B3D;
+}
+.single-product .mvvwb_wrap {
+  font-family: "Quicksand", sans-serif;
+}
+.single-product .single_add_to_cart_button {
+  background-color: #F68B3D !important;
+  font-family: "Roboto", sans-serif !important;
+  letter-spacing: 2px !important;
+  border-radius: 50px !important;
+}
+.single-product .single_add_to_cart_button:hover {
+  background-color: #f47111 !important;
+}
+.single-product .related.products .woocommerce-LoopProduct-link {
+  width: 100%;
+}
+.single-product .related.products h2:first-child {
+  background: #085FDA;
+  color: white;
+  padding: 1em 2em;
+  text-align: center;
+  margin: 2em 0;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 5px;
+}
+.single-product .woocommerce-tabs {
+  width: 100%;
+}
+.single-product .tabs {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.single-product .tabs::before {
+  border: none !important;
+}
+.single-product .tabs li {
+  border: 1px solid #085FDA !important;
+  border-bottom: none !important;
+  background-color: transparent !important;
+  margin: unset !important;
+}
+.single-product .tabs li a {
+  color: #085FDA !important;
+}
+.single-product .tabs li::before, .single-product .tabs li::after {
+  width: 0 !important;
+  height: 0 !important;
+}
+.single-product .tabs li.active {
+  background-color: #085FDA !important;
+  color: white !important;
+}
+.single-product .tabs li.active a {
+  color: white !important;
+}
+.single-product .woocommerce-Tabs-panel {
+  border: 1px solid #085FDA;
+  padding: 1em 2em !important;
+}
+
 .products .type-product {
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.13);
   border-radius: 25px;

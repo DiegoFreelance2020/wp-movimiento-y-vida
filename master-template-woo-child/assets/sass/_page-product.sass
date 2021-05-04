@@ -4,3 +4,53 @@
         a
             span
                 color: $p-color
+.single-product
+    .product_title
+        color: $p-color
+    .mvvwb_wrap
+        font-family: 'Quicksand', sans-serif
+    .single_add_to_cart_button
+        background-color: $p-color !important
+        font-family: 'Roboto', sans-serif !important
+        letter-spacing: 2px !important
+        border-radius: 50px !important
+        &:hover
+            background-color: darken($p-color, 9) !important
+    .related.products
+        .woocommerce-LoopProduct-link
+            width: 100%
+        h2:first-child
+            background: $s-color
+            color: white
+            padding: 1em 2em
+            text-align: center
+            margin: 2em 0
+            line-height: 1em
+            text-transform: uppercase
+            font-size: 1.5em
+            letter-spacing: 5px
+    .woocommerce-tabs
+        width: 100%
+    .tabs
+        padding: 0 !important
+        margin: 0 !important
+        &::before
+            border: none !important
+        li
+            border: 1px solid $s-color !important
+            border-bottom: none !important
+            background-color: transparent !important
+            margin: unset !important
+            a
+                color: $s-color !important
+            &::before, &::after
+                width: 0 !important
+                height: 0 !important
+            &.active
+                background-color: $s-color !important
+                color: white !important
+                a
+                    color: white !important
+    .woocommerce-Tabs-panel
+        border: 1px solid $s-color
+        padding: 1em 2em !important
